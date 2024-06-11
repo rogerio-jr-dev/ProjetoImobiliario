@@ -1,0 +1,173 @@
+.logo {
+  max-width: 420px;
+  height: 208px;
+}
+.banner{
+  display: block;
+}
+.contato-home {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: var(--font-family-primary);
+  color: #000206;
+  margin-right: 10px;
+}
+.contato-home img{
+  max-width: 14px;
+  height: auto;
+}
+.contato-number{
+  grid-column: 1/-1;
+  margin-top:10px;
+  color: inherit;
+  font-size: 1rem;
+  position: relative;
+}
+.contato-number::after{
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../arquivos/icons/telephone.svg)no-repeat;
+  position: absolute;
+  top:4px;
+  left:-24px;
+}
+.whatsapp-comercial{
+  display: block;
+  font-size:10px;
+  color: inherit;
+  padding: 2px 4px;
+}
+.whatsapp-comercial:hover{
+  color:#2A840B;
+}
+.whatsapp-comercial {
+  display: inline-block;
+}
+/*--------------  Menu hamburger-----------------*/
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#menu a:hover {
+  background: linear-gradient(#183171, #071f5d);
+  color:#ffffff;
+}
+.nav-menu a.ativo {
+  background: linear-gradient(#183171, #071f5d);
+  color:#ffffff;
+}
+
+#logo {
+  max-width: 250px;
+  margin-left: 40px;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 100px;
+  /*padding: 0px 16px 16px 16px;*/
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #ffffff;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-left: 10px;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #logo {
+    max-width: 200px;
+    margin-left: 20px;
+  }  
+  .header{
+  height: 70px;
+  }
+}
+@media (max-width: 400px) {
+  #logo {
+    max-width: 180px;
+    margin-left: 0px;
+  }  
+  #header {
+    box-sizing: border-box;
+    height: 80px;
+    padding: 0px 16px 0px 16px;
+  }
+}

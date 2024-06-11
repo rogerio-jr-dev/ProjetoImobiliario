@@ -1,0 +1,35 @@
+.container{
+  max-width: 1760px;
+  margin:0px auto;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.tipo-imovel{
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.btn, .btn-pagina-apto,
+.btn-whatsapp-apto{
+  display: block;
+  background: linear-gradient(#183171, #071F5D);
+  padding: 10px 20px;
+}
+.btn-pagina-apto, .btn-whatsapp-apto{
+  display: block;
+  text-align: center;
+  align-content: end;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.btn-pagina-apto:hover{
+  background: linear-gradient(#1e3879, #0c2975);
+}
+.btn-whatsapp-apto{
+  background: linear-gradient(#289626, #054506);
+}
+.btn-whatsapp-apto:hover{
+  background: linear-gradient(#229420, #035505);
+}

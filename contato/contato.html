@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Dawning+of+a+New+Day&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../arquivos/icons/favicon.svg" >
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../reveal.js" defer></script>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Láuderes imóveis </title>
+</head>
+
+<body id="contato" class="container">
+  <header id="header">
+    <a id="logo" href="../index.html"><img src="../../arquivos/logo/logo.svg" alt=""></a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="menu" role="menu">
+        <li><a href="../../_vitrine_principal/vitrine_sp.html">São Paulo</a></li>
+        <li><a href="../../_vitrine_principal/_guarulhos/vitrine_guarulhos.html">Guarulhos</a></li>
+        <li><a href="../../_vitrine_principal/_atibaia/apto-atibaia.html">Atibaia</a></li>
+        <li><a href="../../contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="contato-bg">
+      <div class="titulo-bg">
+        <div class="titulo container">
+          <span class="efeito-txt-pagInicital">RESPOSTAS EM ATÉ 24H</span>
+          <h1 class="efeito-txt-apto">Nosso contato.</h1>
+        </div>
+      </div>
+    <div class="contato-form-bg">
+      <div class="contato-form container efeito-ficha-tec">
+        <section class="immo-online">
+          <h2>Imobiliária digital </h2>
+          <p>R. dos Jequitibás - Jardim dos Pinheiros <br>
+            Atibaia - SP, 12945-673, Brasil</p>
+          <a href="mailto:lauderes@imobiliarialauderes.com">contato@imobiliarialauderes.com.br</a>
+          <a href="tel:+5511982127991">+55 11 9 8212-7991</a>
+          <a href="https://wa.me/+5511965728416" target="_blank">+55 11 9 6572-8416</a>
+          <div class="rede-social-contato">
+            <a href="https://www.facebook.com/profile.php?id=100080050577893" target="_blank">
+              <img src="../arquivos/icons/facebook.svg" alt="Página da imobiliária no facebook">
+              <span>Imobiliária Láuderes</span>
+            </a>
+            <a href="https://www.instagram.com/imobiliarialauderes?igsh=MXJpM3U4NHdrb3B4dg==" target="_blank">
+              <img src="../arquivos/icons/instagram.svg" alt="Página da imobiliária no instagram">
+              <span>Imobiliária Láuderes</span>
+            </a>
+          </div>
+        </section>
+        <section class="contato-formulario" aria-label="Formulario">
+          <form id="contactForm" class="form" action="processa_formulario.php" method="POST">
+            <div class="form-input">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+              <span id="nameError" class="error-message"></span>
+            </div>
+            <div class="telefone">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" placeholder=" (11) 98212-7991" required>
+                <span id="phoneError" class="error-message"></span>
+            </div>
+            <div class="col-2">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="contato@email.com" required>
+                <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="col-2">
+            <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" >O que você precisa?</textarea>
+            </div>
+            <button class="botao">Enviar Mensagem</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    </article>
+  </main>
+  <footer class="footer-bg container">
+    <div class="footer container">
+      <div class="logo-social-media ">
+        <img class="logo" src="../arquivos/logo/vectorLauderes.svg" alt="">
+        <div class="face-insta">
+          <a href="https://www.facebook.com/profile.php?id=100080050577893" target="_blank"><img class="facebook" src="../arquivos/icons/facebook.svg" alt="facebook" width="32" height="32"> <span>Imobiliária Láuderes</span></a>
+          <a href="https://www.instagram.com/imobiliarialauderes/?igsh=MXJpM3U4NHdrb3B4dg%3D%3D" target="_blank"><img class="instagram" src="../arquivos/icons/instagram.svg" alt="facebook" width="32" height="32"> <span>Imobiliária Láuderes</span></a>
+        </div>
+      </div>
+      <div class="info">
+        <h3>INFORMAÇÕES</h3>
+        <a href="../_vitrine_principal/vitrine_sp.html">São Paulo</a>
+        <a href="../_vitrine_principal/_guarulhos/vitrine_guarulhos.html">Guarulhos</a>
+        <a href="../_vitrine_principal/_atibaia/apto-atibaia.html">Atibaia</a>
+        <a href="./contato.html">Contato </a>
+        <a href="../index.html">Inicio</a>
+      </div>
+      <div class="contato">
+        <h3>CONTATO</h3>
+                  <a class="email-icon" href="mailto:lauderes@imobiliarialauderes.com">contato@imobiliarialauderes.com.br</a>
+
+        <a class="tel-numero" href="tel:+5511982127991">+55 11 9 8212-7991</a>
+        <a class="whatsapp-link" href="https://wa.me/+5511965728416" target="_blank">+55 11 9 6572-8416</a>
+      </div>
+      <div class="localizacao">
+        <div class="endereco">
+          <h3>Endereço</h3>
+          <p class="localizacao-icon">R. dos Jequitibás <br> Jardim dos Pinheiros <br>
+            Atibaia - SP, 12945-673, Brasil</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </main>
+</body>
+</html>

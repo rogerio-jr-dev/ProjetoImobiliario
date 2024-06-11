@@ -1,0 +1,395 @@
+.titulo-destaque{
+  font-size: 2rem;
+  font-family: 'Arvo';
+  margin: 60px 80px;
+  text-transform: uppercase;
+}
+.destaque{
+  width: 410px;
+  max-height: 510px;
+}
+.slider{
+  max-width: 410px;
+}
+.slider img{
+  max-width: 410px;
+  max-height: 410px;
+  border-radius: 4px 4px 0px 0px;
+}
+.destaque-option{
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+  gap: 40px;
+}
+.destaque-info{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 20px;
+  width: 100%;
+  height: 100px;
+  padding: 10px 15px;
+  font-family:var(--font-family-primary);
+  background: #f7f7f7;
+  color: #000614;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 0.2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+.face-insta span:hover{
+  color:#ffffff;
+}
+.destaque-info:hover{
+  background: rgb(255, 255, 255);
+}
+.destaque-info h2{
+  font-family: var(--font-family-tertiary);
+  font-size:1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.destaque-info p{
+  font-size: 0.8rem;
+}
+.info-valor{
+  text-align: right;
+}
+.destaque-regiao{
+  position: relative;
+}
+.destaque-regiao h2::before{
+  content: "";
+  width: 4px;
+  height: 11px;
+  background: #071F5D;
+  top: 6px;
+  left: -8px;
+  position: absolute;
+}
+.destaque h2:hover:before{
+  background: #11c50e;
+  transition: 0.9s;
+}
+@media (max-width:1500px){
+  .destaque{
+    min-width: 310px;
+    height: auto;
+    position: relative;
+  }
+  /*.destaque-option{
+    overflow-x: auto;
+    margin-left:40px;
+    margin-right:40px;
+    gap: 40px;
+  }*/
+  .titulo-destaque{
+    font-size: 1rem;
+    margin: 20px;
+  }
+  .destaque-option{
+    overflow-x: auto;
+    margin-left:20px;
+    margin-right:20px;
+    gap: 20px;
+  }
+.destaque-info{
+  gap: 40px; 
+  padding: 20px;
+}
+.titulo-destaque{
+  font-size: 2rem;
+  margin: 20px 40px;
+}
+}
+@media (max-width:900px){
+  .destaque{
+    min-width:300px; 
+  }
+.titulo-destaque{
+  font-size: 1rem;
+  margin: 20px;
+}
+.destaque-option{
+  overflow-x: auto;
+  margin-left:20px;
+  margin-right:20px;
+  gap: 20px;
+}
+.destaque-info{
+  gap:10px;
+  padding: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+.destaque-info h2{
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.destaque-info p{
+  font-size: 0.7rem;
+}
+.destaque-regiao h2::before{ 
+  top: 4px; 
+}
+}
+/*--Depoimento--*/
+.dec-bg{
+  background: #000614;
+  box-shadow: inset 0 100px #ffffff, inset 0 -100px #ffffff;
+  margin-top: 120px;
+}
+.dec-lar{
+  display: flex;
+  justify-content: space-between;
+}
+.lar{
+  max-width: 550px;
+  max-height: auto;
+  object-fit: cover;
+  margin-right: 80px;
+}
+.lar img{
+  border-radius: 4px;
+}
+.depoimento{
+  margin-top: 120px;
+  margin-left: 80px;
+  padding: 10px;
+  font-size: 4rem;
+  color: #E9AC10;
+  font-family: var(--font-family-decoration);
+  font-weight: 400;
+  line-height: 64px;
+}
+@media (max-width:1500px){
+  .depoimento{
+    margin-top: 170px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 3rem;
+    line-height: 52px;
+  }
+}
+@media (max-width:1200px){
+  .depoimento{
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 3rem;
+    line-height: 52px;
+  }
+  .dec-lar{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .dec-bg{
+    background: #000614;
+    box-shadow: inset 0 -100px #ffffff;
+    margin-top: 60px;
+  }
+  .lar{
+    display: flex;
+    justify-content: center;
+    margin-right:0px;
+  }
+}
+@media (max-width:600px){
+.lar{
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.depoimento{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 2rem;
+  line-height: 32px;
+}
+.dec-lar{
+  gap: 20px;
+}
+}
+/*---Footer---*/
+.footer-bg{
+  background-color: #000614;
+  margin-top: 20px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 0px 80px;
+  padding-bottom: 20px;
+}
+.facebook,
+.instagram{
+  width: 32px;
+  height: 32px;
+}
+.face-insta{
+  min-width: 250px;
+}
+.face-insta a{
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-secondary);
+  margin-bottom: 10px;
+  gap: 10px;
+  color: #c1c2c6;
+}
+.info,.contato,.endereco{
+  min-width: 250px;
+  padding-top: 40px;
+}
+.info a, .contato a, .endereco a, .localizacao-icon{
+  font-family: var(--font-family-secondary);
+}
+/*----Localizacao-----*/
+.localizacao{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  color: #ced1d6;
+  position: relative;
+}
+
+.info a{
+  display: block;
+  color: #ced1d6;
+  margin-bottom: 10px;
+}
+.contato a {
+  color: #ced1d6;
+  display: block;
+  margin-bottom: 10px;
+}
+.footer h3{
+  font-family:var(--font-family-primary);
+  color: #f7f7f7;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contato{
+  position: relative;
+}
+.endereco{
+  position: relative;
+}
+.localizacao-icon::before{
+  content: "";
+  width: 12px;
+  height: 16px;
+  background: url(../arquivos/icons/localizacao-white.svg) no-repeat;
+  top:88px;
+  left: -24px;
+  position: absolute;
+}
+.email-icon::before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../arquivos/icons/Email-white.svg)no-repeat;
+  top:88px;
+  left:-24px;
+  position: absolute;
+}
+.tel-numero:before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../arquivos/icons/tel-white.svg)no-repeat;
+  top:116px;
+  left:-24px;
+  position: absolute;
+}
+.whatsapp-link:before{
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../arquivos/icons/whatsapp.svg)no-repeat;
+  top:142px;
+  left:-24px;
+  position: absolute;
+}
+.info a:hover,
+.contato a:hover{
+  color: #f7f7f7;
+}
+
+@media (max-width:700px){
+  .footer h3{
+    margin-top: 40px;
+  }
+  .info{
+    margin-top:0px;
+  }
+  .localizacao-icon::before{
+    top: 86px;
+    left:-24px;
+  }
+  .email-icon::before{
+    top:86px;
+    left:-24px;
+  }
+  .tel-numero:before{
+    top:120px;
+    left:-24px;
+  }
+  .whatsapp-link:before{
+    top:150px;
+    left:-24px;
+  }
+  .logo {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+@media (max-width:699px){
+  .localizacao-icon::before{
+    top: 86px;
+    left:-24px;
+  }
+  .email-icon::before{
+    top:130px;
+  }
+  .tel-numero:before{
+    top:156px;
+  }
+  .whatsapp-link:before{
+    top:182px;
+  }
+}
+@media (max-width:500px){
+  .footer{
+    justify-content: center;
+    margin: 0px 20px;
+  }
+  .facebook,
+  .instagram{
+    margin-left:0px;
+  }
+  .info,.contato,.endereco{
+    padding-top:0px;
+  }
+  .contato a {
+    margin-top: 14px;
+  }
+  .localizacao-icon::before{
+    top: 86px;
+    left:-24px;
+  }
+  .email-icon::before{
+    top:88px;
+  }
+  .tel-numero:before{
+    top:120px;
+  }
+  .whatsapp-link:before{
+    top:150px;
+  }
+}

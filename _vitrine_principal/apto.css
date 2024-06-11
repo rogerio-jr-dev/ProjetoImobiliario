@@ -1,0 +1,233 @@
+.margin-top-60px{
+  margin-top: 60px;
+}
+@media (max-width:900px){
+  .apto-opcao{
+    font-size: 0.8rem;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap:20px;
+    color: #000614;
+  }
+}
+/*decoração*/
+.dec-sp-bg{
+  background: #f7f7f7;
+  box-shadow: inset 0 40px #ffffff, inset 0 -40px #ffffff;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border-radius: 5px;
+}
+.dec-sp{
+  display: flex;
+  gap: 100px;
+}
+.sp{
+  max-width: 750px;
+  max-height: auto;
+  object-fit: cover;
+  margin-left: 80px;
+}
+.sp img{
+  border-radius: 4px;
+}
+.depoimento-invest p{
+  display: block;
+  max-width: 90%;
+  margin-top: 80px;
+  margin-bottom:20px;
+  font-size: 2.5rem;
+  font-family: 'Arvo';
+}
+.motivos{ 
+  padding: 10px;
+  font-size: 1.5rem;
+  font-family: 'Arvo';
+  position: relative;
+}
+.motivos li{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  margin-left: 60px;
+}
+.motivos img{
+  max-width: 24px;
+  height: auto;
+}
+@media (max-width:1500px){
+  .sp{
+    max-width: 650px;
+  }
+  .dec-sp{
+    gap: 40px;
+  }
+  .depoimento-invest p{
+    max-width: 100%;
+    margin-top: 60px;
+    font-size: 2rem;
+  }
+}
+@media (max-width:1400px){
+  .dec-sp-bg{
+    background: #ffffff;
+    box-shadow: inset 0 40px #ffffff, inset 0 -40px #ffffff;
+  }
+  .depoimento-invest{
+    background-color: #f7f7f7;
+    padding:40px;
+    border-radius: 5px;
+    box-shadow: 0px 0.6px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+  .depoimento-invest p{
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-size: 2rem;
+  }
+  .motivos{
+    font-size: 1rem;
+  }
+  .dec-sp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+  }
+  .sp,
+  .depoimento-invest{
+    padding: 20px;
+  margin-left:20px;
+  margin-right:20px;
+  }
+}
+@media (max-width:500px){
+  .depoimento-invest p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+  .motivos li {
+    font-size: 0.8rem;
+    margin-left:20px;
+}
+.dec-sp-bg{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+}
+  /*---- navegação das -paginas -----*/
+  .nav-pag{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .nav-pag a{
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: var(--font-family-primary);
+    background-color: #f7f7f7;
+  }
+.nav-pag a:hover{
+    background: linear-gradient(#183171, #071f5d);
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  .nav-pag a:checked{
+    color: red;
+  }
+  /*-------  layout segunda pagina de imoveis ------*/
+.bg-analise{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 80px;
+  background-color: #f7f7f7;
+}
+.bg-analise h1{
+  font-family: var(--font-family-tertiary);
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+.analise-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin: 10px 20px;
+}
+.icons-invest {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.icons-invest img{
+  width: 150px;
+  height: 150px;
+}
+.icons-invest h2{
+  font-family: var(--font-family-tertiary);
+  font-size: 1rem;
+}
+@media(max-width:1000px){
+  .bg-analise{
+    padding: 60px;
+  }
+  .bg-analise h1{
+    font-family: var(--font-family-tertiary);
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  .icons-invest img{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media(max-width:600px){
+  .bg-analise{
+    padding: 20px;
+  }
+  .icons-invest img{
+    width: 60px;
+    height: 60px;
+  }
+  .bg-analise h1{
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  .icons-invest h2{
+    font-size: 0.8rem;
+  }
+  .analise-area{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0px;
+  }
+}
+@media(max-width:600px){
+  .analise-area{
+    display: block;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    gap: 60px;
+    margin: 10px 20px;
+    overflow: scroll;
+  }
+  .icons-invest {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+@import 'reset.css';
+@import 'global.css';
+@import 'utilitario.css';
+/*home*/
+@import 'header.css';
+@import 'destaque.css';
+/*CSS das Paginas de vitrine*/
+@import '../_vitrine_principal/apto.css';
+/*CSS de apresentação dos imoveis*/
+@import '../_vitrine_principal/_apresentacao_imovel.css';
+/*contato*/
+@import 'contato.css';
+/*cssParaJs*/
+@import 'cssParaJs.css';
+

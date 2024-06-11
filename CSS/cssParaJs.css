@@ -1,0 +1,5 @@
+.efeito-img-apto, .efeito-txt-apto, .efeito-ficha-tec,
+.efeito-txt-pagInicital,.efeito-reveal-destaques
+{
+  visibility: hidden;
+}

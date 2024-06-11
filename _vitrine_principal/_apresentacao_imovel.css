@@ -1,0 +1,199 @@
+#body-apresentacao{
+  background-color: #ffffff;
+}
+.apto-apresentacao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 80px;
+  gap: 20px;
+}
+.slider-apresentacao{
+  display: flex;
+  max-width: 860px ;
+  flex-wrap: wrap;
+  gap: 10px 10px; 
+}    
+.slider-apresentacao img:first-child{
+  min-width: 100%;
+  min-height: 440px;
+}
+.slider-apresentacao img{
+  display: block;
+  box-sizing: border-box;
+  flex: 1;
+  max-height: 560px;
+  min-width: 150px;
+  border-radius: 4px;
+  height: 150px;
+  object-fit: cover;
+}
+.apto-info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+  box-shadow: 0px 0.6px 1px 0px rgba(0, 0, 0, 0.20);
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;
+}
+.apto-info h1{
+  font-family: var(--font-family-tertiary);
+  margin-bottom: 20px;
+}
+.apto-info .desc-apto p{
+  padding: 0px 10px 10px 10px;
+}
+.apto-info p{
+  font-family: var(--font-family-secondary);
+  font-weight: 200;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+.ficha-tec-e{
+  position: relative;
+}
+.ficha-tec-d {
+  position: relative;
+}
+ .icon-regua::before{
+    content: "";
+    width: 20px;
+    height: 18px;
+    background: url(../arquivos/icons/icons-apto/icon-regua.svg) no-repeat;
+    top: 6px;
+    left: -20px;
+    position: absolute;
+}
+.icon-andar::before{
+  content: "";
+  width: 20px;
+  height: 18px;
+  background: url(../arquivos/icons/icons-apto/icon-apto.svg) no-repeat;
+  top:36px;
+  left: -16px;
+  position: absolute;
+}
+.icon-preco::before{
+  content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../arquivos/icons/icons-apto/icon-moneyl.svg) no-repeat;
+    top: 72px;
+    left: -20px;
+    position: absolute;
+}
+.icon-dorms::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../arquivos/icons/icons-apto/icon-cama.svg) no-repeat;
+  bottom: 58px;
+  left: -20px;
+  position: absolute;
+}
+.icon-ducha::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../arquivos/icons/icons-apto/icon-doucha.svg) no-repeat;
+  bottom: 35px;
+  left: -26px;
+  position: absolute;
+}
+.icon-parking::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../arquivos/icons/icons-apto/icon-parking.svg) no-repeat;
+  top: 68px;
+  left: -20px;
+  position: absolute;
+}
+.ficha-tecnica{
+  margin-top:20px;
+}
+.area-ficha-tecnica{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 20px 20px 40px;
+}
+.ficha-tec-e .ficha-tec-d {
+  font-family: var(--font-family-secondary);
+  font-weight: 200;
+  font-size: 1rem;
+}
+.area-botao{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  font-family:var(--font-family-primary);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.area-botao a{
+  display: block;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.dt{
+  display: flex;
+  justify-content: center;
+}
+/*Equipe*/
+.equipe img{
+  box-sizing: border-box;
+  max-width: 410px;
+  max-height: 410px;
+  border-radius: 5px;
+}
+/*Responsividade*/
+
+@media (max-width:1400px){
+  .area-ficha-tecnica{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    padding: 0px 20px 20px 40px;
+}
+.area-botao{
+  grid-column: 1/-1;
+}
+}
+@media(max-width: 1000px){
+ .apto-apresentacao{
+    grid-template-columns: 1fr;
+    margin-left:20px;
+    gap: 10px;
+  }
+}
+@media(max-width: 500px){
+  .area-ficha-tecnica{
+    grid-template-columns: 1fr;
+    padding: 0px 20px 20px 10px;
+ }
+ .slider-apresentacao{
+  margin-right: 20px;
+}  
+.apto-info{
+      padding-right: 10px;
+      margin-right: 20px;
+}  
+.slider-apresentacao img:first-child{
+  min-width: 100%;
+  min-height: 440px;
+}
+.slider-apresentacao img{
+  display: block;
+  box-sizing: border-box;
+  flex: 1;
+  max-height: 560px;
+  min-width: 30px;
+  border-radius: 4px;
+  height: 60px;
+  object-fit: cover;
+}
+}
